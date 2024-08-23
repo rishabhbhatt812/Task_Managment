@@ -25,7 +25,7 @@ const Signup = () => {
       handleError("All fields are required");
     }
     else{
-    const response =   await axios.post("http://localhost:5000/api/v1/sign-in",Data);
+    const response =   await axios.post("https://task-managment-ivory.vercel.app/api/v1/sign-in",Data);
     setData({username:"",email:"",password:""});
     const msg =  response.data.message ;
      setTimeout(()=>{

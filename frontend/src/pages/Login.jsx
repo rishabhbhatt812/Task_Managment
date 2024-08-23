@@ -29,7 +29,7 @@ const Login = () => {
       
     }
     else {
-    const response =   await axios.post("http://localhost:5000/api/v1/log-in",Data);
+    const response =   await axios.post("https://task-managment-ivory.vercel.app/api/v1/log-in",Data);
     setData({username:"",password:""});
     console.log(response.status);
 

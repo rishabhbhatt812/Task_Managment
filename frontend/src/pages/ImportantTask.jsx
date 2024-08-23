@@ -11,7 +11,7 @@ const ImportantTask = ()=> {
   };
   useEffect(()=>{
     const fetch = async ()=>{
-  const response =   await axios.get("http://localhost:5000/api/v2/get-imp-tasks",
+  const response =   await axios.get("https://task-managment-ivory.vercel.app/api/v2/get-imp-tasks",
    {headers}
 );
  setData(response.data.data);

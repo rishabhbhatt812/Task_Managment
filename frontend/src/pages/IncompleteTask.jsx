@@ -10,7 +10,7 @@ const headers = {
 };
 useEffect(()=>{
   const fetch = async ()=>{
-const response =   await axios.get("http://localhost:5000/api/v2/get-incompleted-tasks",
+const response =   await axios.get("https://task-managment-ivory.vercel.app/api/v2/get-incompleted-tasks",
  {headers}
 );
 setData(response.data.data);

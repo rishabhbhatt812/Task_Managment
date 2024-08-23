@@ -22,7 +22,7 @@ useEffect(()=>{
     if(Data.title === "" || Data.desc === ""){
       alert("All fields are required")
     }else{
-     const respo = await axios.post("http://localhost:5000/api/v2/create-task", Data , {headers});
+     const respo = await axios.post("https://task-managment-ivory.vercel.app/api/v2/create-task", Data , {headers});
 
      console.log(respo);
       setData({title: "" , desc:""});

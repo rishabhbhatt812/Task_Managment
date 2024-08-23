@@ -13,7 +13,7 @@ const Cards =({home , setInputDiv, data , setupdateData}) => {
   };
    const handleCompleteTask = async(id)=>{
     try {
-     await axios.put(`http://localhost:5000/api/v2/complete-task/${id}` ,{},
+     await axios.put(`https://task-managment-ivory.vercel.app/api/v2/complete-task/${id}` ,{},
       {headers}
       );
      
